@@ -9,7 +9,7 @@ if [ -z ${userName} ]; then
     echo -e "\n You must enter a userName"
     exit 1
 else 
-   read -p "Enter Your userPassword: " userPassword
+   read -s -p  "Enter Your userPassword: " userPassword
 
    # Check if userPassword is empty
    if [ -z ${userPassword} ]; then
@@ -19,8 +19,8 @@ else
 fi
 
 
-echo -e "\n $userName\n"
-echo -e "\n $userPassword\n"
+#echo -e "\n $userName\n"
+#echo -e "\n $userPassword\n"
 
 # Base64 encode apmUserName and apmUserpassword 
 echo -e "\nbase64_Encoded_String: "
