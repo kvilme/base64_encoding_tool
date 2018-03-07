@@ -27,4 +27,4 @@ echo -e "\nbase64_Encoded_String: "
 echo -n "$userName:$userPassword" | base64 -w 0 
 echo -e  "\n"
 
-#cho "base64_Encoded_String: ${base64_Encoded_String}"
+
